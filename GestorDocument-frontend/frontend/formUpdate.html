@@ -36,15 +36,18 @@
 					</form>
 				</div>
 			</nav>
-			<h1>Gestor de documentos</h1>
-			<div>
-				<label for="nameDocument">Ingresar el id:</label>
-				<input type="text" class="form-control" id="buscarId">
-				<button type="button" onclick="getDocumentById()" class="btn btn-default">Buscar</button>	
-			</div>
+			
 			
 			
 			<div class="container">
+				<h1>Gestor de documentos</h1>
+				<div clas="row">
+					<div class="col col-md-4">
+						<label for="nameDocument">Ingresar el id:</label>
+						<input type="text" class="form-control" id="buscarId">
+						<button type="button" onclick="getDocumentById()" class="btn btn-default">Buscar</button>	
+					</div>
+				</div>
 				<div class="row"> 	
 					<div class="col col-md-4">
 						<div class="form-group">
@@ -54,7 +57,7 @@
 				</div>
 					
 				<div class="row"> 	
-					<div class="col col-md-4">
+					<div class="col col-md-6">
 						<div class="form-group">
 						<label for="nameDocument">Nombre del documento:</label>
 						<input type="text" class="form-control" id="nameDocument">
@@ -62,8 +65,8 @@
 					</div>
 				</div>
 				<div class="row">	
-					<div class="col col-md-4">	
-						<div class="input-group"></div>
+					<div class="col col-md-6">	
+						<div class="input-group">
 							<label for="exampleFormControlSelect2">Tipo</label>
 							<select class="custom-select" id="typeDoc">
 								<option value="Público">Público</option>
@@ -74,7 +77,7 @@
 					</div>
 				</div>
 				<div class="row">	
-					<div class="col col-md-4"></div>	
+					<div class="col col-md-6">	
 						<div class="form-group">
 							<label for="owner">owner:</label>
 							<input type="text" class="form-control" id="owner">
@@ -82,7 +85,7 @@
 					</div>
 				</div>
 				<div class="row">	
-					<div class="col col-md-4">	
+					<div class="col col-md-6">	
 						<div class="form-group">
 							<label for="exampleFormControlFile1">Cargar Documento</label>
 							<input type="file" class="form-control-file" id="document">

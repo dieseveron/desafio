@@ -44,7 +44,7 @@ $.ajax({
 		txt += "<table border='1' class='table'>";
 		txt +="<tr><td id='del_id'>id</td><td>Nombre</td><td>Fecha</td><td>Tipo</td><td>Owner</td><td>Documento</td><td>Funcion</td></tr>"
         for (x in resp) {
-			txt += "<tr><td>" + resp[x].id+ "</td><td>" + resp[x].nameDocument+ "</td><td>" + resp[x].dateUpload+ "</td><td>" + resp[x].typeDoc+ "</td><td>" + resp[x].owner+ "</td><td>" + resp[x].document+ "</td><td><button onclick='putDocument("+resp[x].id+")' class='btn btn-default'>Update</button> <br> <button onclick='delDocument("+resp[x].id+")' class='btn btn-default'>Delete</button></td></tr>";
+			txt += "<tr><td>" + resp[x].id+ "</td><td>" + resp[x].nameDocument+ "</td><td>" + resp[x].dateUpload+ "</td><td>" + resp[x].typeDoc+ "</td><td>" + resp[x].owner+ "</td><td>" + resp[x].document+ "</td><td><button onclick='delDocument("+resp[x].id+")' class='btn btn-default'>Delete</button></td></tr>";
 		}
 		txt += "</table>"; 
 		document.getElementById("table").innerHTML = txt;
