@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Gestor de documentos</title>
+	<!-- Include our stylesheet -->
+	<link href="assets/css/styles.css" rel="stylesheet" />
+	<link href="bootstrap-4.1.3-dist/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+		<a class="navbar-brand" href="/">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="/formCreate.html">Crear documento<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/formRead.html">Ver listado de documentos</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="/formUpdate.html">Editar un docuemnto</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/formDelete.html">Borrar un documento</a>
+			</li>
+			<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+		  </ul>
+		  <form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		  </form>
+		</div>
+		</nav>
+		<h4>Gestor de Documentos</h4>
+	  <p>
+				
+
+				Se desea diseñar e implementar una solución Web para el módulo administración
+				de documentos como parte del gestor de documentos corporativo.
+				A continuación se detallan todos los requerimientos funcionales que deberá cumplir
+				este módulo:
+				
+				
+				1. Alta de documentos: Para el alta de documentos se presentará un formulario
+				con los siguientes campos:
+				File input que permita seleccionar documentos alojados en la máquina del operador.
+				Combo que permita seleccionar el tipo de documento. Los tipos de documentos son: Público, Privado, Draft.
+				Combo que permita seleccionar el owner del documento.
+				Campo que permita ingresar la descripción del documento.
+				Todos los campos son requeridos excepto descripción.
+				2. Listado de documentos: 
+				2.a) Los documentos se deberán presentar en forma de
+				listado con la siguiente estructura:
+				Nombre del documento
+				Fecha de subida
+				Tipo de documento
+				Owner del documento
+				Documento (Descargable)
+				2.b) poder consultar de forma externa tipo Api Rest el servicio de listado de documentos (Utilizar Spring Rest)
+				
+				3. Editar documentos: Ídem alta.
+				
+				4. Eliminar documentos: Se deberá poder borrar de forma consistente los
+				documentos cargados.
+				
+				5. Detalle del documento: 
+				
+				5.a) El detalle de cada documento se debe mostrar en un
+				diálogo con los siguientes datos:
+				Nombre (el nombre debe ser un link que permita hacer download del documento)
+				Fecha de subida
+				Owner
+				Descripción
+				Grupo de usuarios relacionados con el documento
+				5.b)  poder consultar de forma externa tipo Api Rest el servicio de listado de documentos (Utilizar Spring Rest)  
+				
+				Condiciones generales:
+				Se debe resolver utilizando Java, JPA, Spring, 
+				En caso de no conocer alguna de las tecnologías, usar la que considere. 
+				En los puntos 2.b) y 5.b) será necesario devolver un Json
+				Te pedimos que una vez finalizado nos compartas por github o donde consideres.
+		</p>
+	
+	 
+	
+</body>
+
+</html>
